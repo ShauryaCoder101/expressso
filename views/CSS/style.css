@@ -1,0 +1,498 @@
+
+        
+        .container{
+            width:100vw;
+            height: 102vh;
+            z-index: 1;
+        }
+        ::placeholder{
+            text-align: center;
+            font-family:'Josefin Sans';
+            color: black;
+            font-weight: bolder;
+            font-size: 14px;
+            
+        }
+
+        #page1, #page2{
+             
+        box-sizing: border-box;
+        
+
+        position: absolute;
+        width: 1920px;
+        height: 1080px;
+        left: 0px;
+        top: 0px;
+        transition: 1s;
+
+        background: linear-gradient(90deg, #2DAA45 0%, #3ACD64 100%);
+        box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.25);
+        overflow:hidden;
+        }
+        #page3{
+             
+            box-sizing: border-box;
+            
+    
+            position: absolute;
+           
+            transition:1s;
+            top: 0px;
+    
+            
+            box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.25);
+            
+            }
+
+            #page3:hover{
+                background-color: #00911d;
+                
+                
+                cursor: pointer;
+
+            }
+
+        #mainheader{
+            /* expresso */
+
+        position: absolute;
+        width: 820px;
+        height: 200px;
+        left: calc(50% - 820px/2);
+        top: calc(50% - 200px/2 - 40px);
+
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 200px;
+        line-height: 200px;
+        transition:1s;
+
+        color: #FFFFFF;
+        }
+        #mainheader1{
+            /* expresso */
+
+        position: absolute;
+        width: 820px;
+        height: 200px;
+        left: calc(50% - 820px/2);
+        top: calc(50% - 200px/2 - 40px);
+
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 200px;
+        line-height: 200px;
+
+        color: #FFFFFF;
+        }
+
+        #mainheader:hover{
+            color:#f2ba32;
+            transition-duration: 1s;
+            cursor: pointer;
+        }
+        
+        #topright1{
+            /* history check */
+
+        position: absolute;
+        width: 106px;
+        height: 20px;
+        left: 1622px;
+        top: 25px;
+        color:#FFFFFF;
+        font-family: 'josefin Sans';
+        }
+        #topright2{
+            /* history check */
+
+        position: absolute;
+        width: 200px;
+        height: 20px;
+        left: 1758px;
+        top: 25px;
+        color:#FFFFFF;
+        font-family:  'josefin Sans';
+        }
+        #topright1:hover{
+            color:#f2ba32;
+            transition-duration: 1s;
+            cursor: pointer;
+        }
+        #topright2:hover{
+            color:#f2ba32;
+            transition-duration: 1s;
+            cursor: pointer;
+        }
+        #topleft{
+            width: 106px;
+            height: 20px;
+            margin-top:25px;
+            margin-left:25px;
+            color: #FFFFFF;
+            font-family: 'josefin Sans';
+        }
+        #topleft:hover{
+            color:#f2ba32;
+            transition-duration: 1s;
+            cursor: pointer;
+        }   
+        
+        #loader{
+            position:fixed;
+            display:none;
+            z-index:9000;
+            background: linear-gradient(90deg, #2DAA45 0%, #3ACD64 100%);
+            height:100vh;
+            width:102vw;
+
+        }
+        #animation{
+            position:fixed;
+            bottom:375px;
+            left:885px;
+
+        }
+
+        /* page 2  */
+
+        #page2navbar{
+            position:absolute;
+            width:1940px;
+            height:85px;
+            margin-top: -10px;
+            margin-left:-20px;
+            z-index:10;
+            
+            background-color: #2DAA45;
+        }
+
+        #logo{
+            font-family: 'Josefin Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 35px;
+            color: #FFFFFF;
+            position: absolute;
+            left: 1.61%;
+            right: 90.89%;
+            top: 25.39%;
+            bottom: 95.37%; 
+        }
+
+        #background1page2{
+            /* FoodAndDrinkDesign 1 */
+
+        position: absolute;
+        width: 669px;
+        height: 600px;
+        left: -12px;
+        top: 77px;
+        
+        }
+        #backhround2page2{
+            /* FoodAndDrinkDesign 2 */
+
+        position: absolute;
+        width: 640px;
+        height: 485px;
+        left: -3px;
+        margin-top: 95px;
+
+        }
+        #imgpage2{
+            /* Frame 371 */
+
+        position: absolute;
+        width: 975px;
+        height: 618.54px;
+        left: 122.5px;
+        top: 265px;
+
+
+        }
+        #textpage2{
+            /* pick from/Group 392 */
+
+        position: absolute;
+        width: 985px;
+        height: 90px;
+        left: 125px;
+        top: 129px;
+        background-color: #FFFFFF;
+        border:2px dashed  #3AB756;
+        border-radius: 20px;
+        
+        
+        }
+
+        #overtext,#overtextSubLog,#overtextSubSig{
+            position:absolute;
+            color: #3AB756;
+            font-size: 23px;
+            font-weight: bold;
+            font-family: 'Josefin Sans';
+        }
+
+
+        #inputbox1{
+            
+            
+
+            position: absolute;
+            width: 570px;
+            height: 794px;
+            left: 1225px;
+            top: 191px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 1px 1px 10px 10px whitesmoke;
+            border:  whitesmoke;
+            
+
+
+        }
+
+        
+        
+        
+        input:focus::placeholder{
+            opacity:0;
+
+        }
+
+        #inputdiv{
+            position: absolute;
+            left:20px;
+            top:40px;
+            height:350px;
+            width:100px;
+            border-radius: 20px;
+
+        }
+        #insidebox{
+            position: absolute;
+            width:470px;
+            left:47px;
+            height:210px;
+            border-radius: 20px;
+            box-shadow: 0.5px 0.5px 5px 5px whitesmoke;
+            top:80px;
+            
+        }
+        #greenlays1, #greenlays2, #greenlays3, #greenlays4, #greenlays5, #greenlays6{ 
+            border-radius: 10px;
+            height:30px;
+            box-shadow: 0.5px 0.5px 5px 5px whitesmoke;
+            border-color: #3ACD64;    
+            margin-top: 10px;
+        }
+        
+        input[type='number']{
+            
+            padding:10px;
+            font-size: 17px;
+            border-radius:10.666666px;
+            width:60px;
+            font-family: 'Josefin Sans'; 
+            height:13px;
+            border-color: #3ACD64;
+            margin-top:10px;
+         
+        }
+
+        #inputnumdiv{
+            position: absolute;
+            left: 240px;
+            top:40px;
+            width:60px;
+            height: 150px;
+        }
+        #inputqntdiv{
+            position: absolute;
+            left:360px;
+            top: 40px;
+            height:150px;
+
+        }
+        #insideboxheading{
+            left:20px;
+            top: 20px;
+            height:30px;
+            width:430px;
+        }
+        #insidelinediv{
+            position: absolute;
+            width:470px;
+            border-bottom: 2px dashed #3AB756;
+            height:35px;
+        }
+
+        .button {
+            background-color: #3AB756; /* Green */
+            border: none;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+          }
+          .button1 {
+            background-color: #3AB756;
+            color:#FFFFFF;
+            font-family: 'Josefin Sans';
+            border-radius: 10px;
+            font-weight: bold;
+            border: none;
+            margin-left:340px;
+            margin-top:30px;
+            width:100px;
+            height:35px;
+            left:700px;
+            top:600px
+        }
+        #addressmodal{
+            display:none;
+            position: fixed;
+            height:600px;
+            width:450px;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border-radius: 20px;
+            
+            z-index: 1000;
+
+        }
+        #newaddress{
+            margin-left:30px;
+            margin-top:60px;
+            width:350px;
+            font-family: 'Josefin Sans'; 
+            height:20px;
+            border-color: #3ACD64;
+            border-radius: 20px;
+
+        }
+        #submitAddress{
+            margin-top:440px;
+            margin-right:0;
+            width:50%;
+            border-radius: 5px 5px 5px 20px;
+            background-color: #2DAA45;
+            height:54px;
+            border:none;
+            color:#FFFFFF;
+            font-size: 'Josefin Sans';
+            font-weight: bold;
+            font-size: 20px;
+            font-stretch: extra-expanded;
+            padding:0;
+
+        }
+
+        #submitAddress:hover{
+            background-color: #3AB756;
+            font-size: larger;
+        }
+        #cancelButton{
+            width:49.11%;
+            margin-top:440px;
+            margin-right:0;
+            border-radius: 5px 5px 20px 5px;
+            background-color: #ff0000;
+            height:54px;
+            border:none;
+            color:#FFFFFF;
+            font-size: 'Josefin Sans';
+            font-weight: bold;
+            font-size: 20px;
+            font-stretch: extra-expanded;
+            padding:0;
+        }
+        #cancelButton:hover{
+            background-color: #c42121;
+            font-size: larger;
+        }
+        #addItemsDiv{
+            
+            display:none;
+            position: fixed;
+            height:700px;
+            width:550px;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border-radius: 20px;
+            background-image: url("FoodAndDrinkDesign 1.jpg");
+            border:4px dashed #3AB756;
+        }
+            
+            
+
+        #addItem{
+            height:20px;
+            width:px;
+            margin-left:420px;
+            margin-top:10px;
+            background-color: transparent;
+            border-color: transparent;
+            border-radius: 5px;
+            
+
+        }
+        .arrow {
+            border: solid #3AB756;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: px;
+            rotate:-45deg;
+            height:6px;
+            width:6px;
+            
+        }
+
+        #productappend1{
+            font-family: 'Josefin Sans';
+            color:#2DAA45;
+            font-size: 15px;
+            font-weight: bolder;
+            text-align: center;
+
+        }
+        #submit:hover{
+            background-color: #3AB756;
+            font-size: larger;
+
+        }
+        #username,#fname,#lname,#email,#password,#password1,#email1{ 
+            border-radius: 10px;
+            height:30px;
+            box-shadow: 0.5px 0.5px 5px 5px whitesmoke;
+            border-color: #3ACD64;    
+            margin-top: 10px;
+            width:400px
+        }
+        ::placeholder{
+            color: gray;
+        }
+        input[type='submit']{
+            height:60px;border:3px dashed #2DAA45
+
+        }
+        
+
+            
+            
+
+        
+        
+        

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expresso</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body style="background-color: black;">
+    <div id="page2navbar">
+        <a id="logo">expresso</a>
+    </div>
+    <div>
+        <div id="background1page2">
+            <img src="Images/design1.jpg">
+        </div>
+        <div id="background2page2">
+            <img src="Images/design2.jpg" style="margin-top:550px; margin-left: -29px;">
+        </div>
+        <div>
+            <img src="Images/design3.jpg" style="position: absolute;width: 640px;height: 600px;left: 576px;top: 61px;">
+        </div>
+        <div>
+            <img src="Images/design4.jpg" style="position: absolute;width: 640px;height: 600px;left: 576px;top: 443px;">
+        </div>
+        <div>
+            <img src="Images/design5.jpg"  style="position: absolute;width: 712px;height: 600px;left: 1216px; top:61px">
+        </div>
+        <div>
+            <img src="Images/design6.jpg" style="position: absolute;width: 712px;height: 600px;left: 1216px;top: 443px;">
+        </div>
+        <div>
+            <img src="Images/imgpage2.jpg" id="imgpage2">
+        </div>
+        <div id="textpage2">
+            <a id="overtext" style="margin-top:10px;margin-left:10px;">Enter the product name, quantity, and price for each item.   
+                Add more items or provide special instructions if needed.   
+                Choose the pickup location: inside or outside the campus.   
+                Confirm the delivery address, make changes if necessary.</a>
+        </div>
+        <div id="inputbox1">
+            <a id="overtext" style="font-size: 20px; color:black; margin-left:50px;margin-top:30px">Enter your order details here:</a>
+            <div id="insidebox">
+                <div id="insideboxheading">
+                    <a id="overtext" style="font-size: 17px; margin:20px">Product Name</a>
+                    <a id="overtext" style="font-size: 17px; margin-left:240px; margin-top:20px">Quantity</a>
+                    <a id="overtext" style="font-size: 17px; margin-left:360px; margin-top:20px">Amount</a>
+                </div>
+                <div id="inputdiv">
+                    <input type="text" id="greenlays1" placeholder="Enter Item ">
+                    <input type="text" id="greenlays2" placeholder="Enter Item ">
+                    <input type="text" id="greenlays3" placeholder="Enter Item ">
+                </div>
+                <div id="inputnumdiv">
+                    <input type="number" id='quantity1' placeholder="-" min="0" max="100">
+                    <input type="number" id='quantity2' placeholder="-" min="0" max="100">
+                    <input type="number" id='quantity3' placeholder="-" min="0" max="100">
+                </div>
+                <div id="inputqntdiv">
+                    <input type="number" id='price1' placeholder ="Price" min="0" max="1500">
+                    <input type="number" id='price2' placeholder ="Price" min="0" max="1500">
+                    <input type="number" id='price3' placeholder ="Price" min="0" max="1500">
+                </div>
+            </div>
+            <div id="insidebox" style="top:320px;height:70px ">
+                <div id="insidelinediv">
+                    <img src="Images/Plus.jpg" style="position:absolute;margin-top:5px; margin-left:10px">
+                    <a id="overtext" style="font-size: 15px; margin-top:15px;margin-left:55px">Add more items</a>
+                    <button id="addItem" onclick="addMoreItems()"><i class="arrow right"></i></button>
+                    <img src="Images/Notepad.jpg" style="position:absolute;margin-top:37px;margin-left:-435px">
+                    <a id="overtext" style="font-size: 15px; margin-top:45px;margin-left:-390px">Instructions</a>
+                    <button id="addItem" ><i class="arrow right"></i></button>
+
+                </div>
+            
+                <div id="insidebox" style="margin-top:20px; left:0px; height:80px">
+                    <a id="overtext" style="font-size: 17px; margin-top:20px;margin-left:75px; color:black">Delivering to
+                        <spam style="color:#3AB756;text-decoration: underline;">Hostel</spam> </a>
+                        <span>
+                            <img src="Images/Locationimg.jpg" style="position: absolute;margin:10px; width:50px; padding:0px;margin-right:0px;margin-bottom:0px">
+                        </span>
+                        <span>
+                            <a id="overtext" style="font-size:13px; color:gray; top:50px; left:75px;width:250px ">322, F Block, Mens Hostel, VIT Vellore</a>
+                        </span>
+                        <button class="button1"  onclick="openModal ()">Change</button>
+                </div>
+                <div id="insidebox" style="margin-top:130px; left:0px; height:80px">
+                    <img src="Images/shopiconimg.jpg" style="position:absolute;margin-top:18px;margin-left:10px; ">
+                    <a id="overtext" style="font-size: 16px;margin-left:70px;margin-top:23px;color: black;width:260px">Pick up Items
+                        <span style="color:#3AB756">Inside</span>
+                        or
+                        <span id="jimjam"style="color:#3673E2">Outside</span>
+                        the campus?
+                    </a>
+                </div>
+                <div id="insidebox" style="margin-top:270px; margin-left:-45px;height:80px;border:3px dashed #2DAA45">
+                    <a id="overtext" style="margin-top:30px;width:100%;text-align: center;">Confirm and Proceed</a>
+
+                </div>
+                <div>
+                    
+                </div>
+
+            
+            
+        </div>
+    </div>
+    <div id="addressmodal">
+        <a id="overtext" style="left:30px; top:20px;">Change address:</a>
+        <input type="text" id="newaddress" placeholder="click to edit">
+        <button id="submitAddress">Submit</button>
+        
+        <button id="cancelButton" onclick="closeModal()">Cancel</button>
+
+    </div>
+    <div id="addItemsDiv">
+        
+        <div id="insideboxheading">
+                <a id="overtext" style="font-size: 17px; margin-left:50px; margin-top:20px">Product Name</a>
+                <a id="overtext" style="font-size: 17px; margin-left:270px; margin-top:20px">Quantity</a>
+                <a id="overtext" style="font-size: 17px; margin-left:400px; margin-top:20px">Amount</a>
+        </div>
+        <div id="inputdiv" style="margin-left:50px;margin-top:70px;height:500px;">
+            <a id='product1append' style="font-family: 'Josefin Sans';color:#2DAA45;font-size: 20px;font-weight: bolder;text-align: center;">4</a>
+            <br>
+            <br>
+            <a id='product2append' style="font-family: 'Josefin Sans';color:#2DAA45;font-size: 20px;font-weight: bolder;text-align: center;">5</a>
+            <br>
+            <br>
+            <a id='product3append' style="font-family: 'Josefin Sans';color:#2DAA45;font-size: 20px;font-weight: bolder;text-align: center;">7</a>
+            <br>
+            <br>
+            <input type="text"  id="greenlays4" placeholder="Enter Item ">
+            <input type="text" id="greenlays5" placeholder="Enter Item ">
+            <input type="text" id="greenlays6" placeholder="Enter Item ">
+
+        </div>
+        <div id="inputnumdiv" style="margin-left:40px;margin-top:70px; height:500px">
+            <a id='quantity1append' style="font-family: 'Josefin Sans';color:#2DAA45;font-size: 20px;font-weight: bolder;text-align: center;">1</a>
+            <br>
+            <br>
+            <a id='quantity2append' style="font-family: 'Josefin Sans';color:#2DAA45;font-size: 20px;font-weight: bolder;text-align: center;">2</a>
+            <br>
+            <br>
+            <a id='quantity3append' style="font-family: 'Josefin Sans';color:#2DAA45;font-size: 20px;font-weight: bolder;text-align: center;">3</a>
+            <br>
+            <br>
+            <input type="number" id='quantity4' placeholder="-" min="0" max="100">
+            <input type="number" id='quantity5' placeholder="-" min="0" max="100">
+            <input type="number" id='quantity6' placeholder="-" min="0" max="100">
+        </div>
+        <div id="inputqntdiv" style="margin-left:40px;margin-top:70px; height:500px">
+            <a id='price1append' style="font-family: 'Josefin Sans';color:#2DAA45;font-size: 20px;font-weight: bolder;text-align: center;">6</a>
+            <br>
+            <br>
+            <a id='price2append' style="font-family: 'Josefin Sans';color:#2DAA45;font-size: 20px;font-weight: bolder;text-align: center;">8</a>
+            <br>
+            <br>
+            <a id='price3append' style="font-family: 'Josefin Sans';color:#2DAA45;font-size: 20px;font-weight: bolder;text-align: center;">9</a>
+            <br>
+            <br>
+            <input type="number" id='price4' placeholder ="Price" min="0" max="1500">
+            <input type="number" id='price5' placeholder ="Price" min="0" max="1500">
+            <input type="number" id='price6' placeholder ="Price" min="0" max="1500">
+        </div>
+        
+        
+        <div>
+            <a  id="overtext" style="top:400px;margin-left:20px;font-size: 15px; margin-right:20px">Disclaimer: Please provide all the product names correctly as our Delivery Partners will bring to you what you write</a>
+        </div>
+        <button id="cancelButton"  style="position:absolute;margin-top:616px;margin-left:280px"onclick="closeAddMoreItems()">Cancel</button>
+        <button id="submit" style="position:absolute;width:50%;margin-top:616px;margin-left:0px;background-color:#2DAA45; border:transparent;border-radius: 5px 5px 5px 20px;height:54px;font-size: 'Josefin Sans';font-weight: bold;font-size: 20px;font-stretch: extra-expanded;color:white">Submit</button>
+
+        
+
+    </div>
+    <script>
+        function openModal(){
+            document.getElementById('addressmodal').style.display='block';
+        }
+        function closeModal(){
+            document.getElementById('addressmodal').style.display='none';
+        }
+        
+        document.getElementById('submitAddress').onclick = function() {
+        var newaddress = document.getElementById('newaddress').value;
+        document.querySelector('#insidebox a[style*="color:gray"]').innerText = newaddress;
+        closeModal();
+        };
+
+        function addMoreItems(){
+            if(
+                document.getElementById('greenlays1').value != '' && document.getElementById('quantity1').value !='' && document.getElementById('price1').value !=''
+            ){
+            document.getElementById('addItemsDiv').style.display='block';
+            var greenlays1 = document.getElementById('greenlays1').value;
+            var quantity1 = document.getElementById('quantity1').value;
+            var price1 = document.getElementById('price1').value;
+            var greenlays2 = document.getElementById('greenlays2').value;
+            var quantity2 = document.getElementById('quantity2').value;
+            var price2 = document.getElementById('price2').value;
+            var greenlays3 = document.getElementById('greenlays3').value;
+            var quantity3 = document.getElementById('quantity3').value;
+            var price3 = document.getElementById('price3').value;
+            document.getElementById('product1append').innerText= greenlays1;
+            document.getElementById('quantity1append').innerText= quantity1;
+            document.getElementById('price1append').innerText =price1;
+            document.getElementById('product2append').innerText= greenlays2;
+            document.getElementById('quantity2append').innerText= quantity2;
+            document.getElementById('price2append').innerText =price2;
+            document.getElementById('product3append').innerText= greenlays3;
+            document.getElementById('quantity3append').innerText= quantity3;
+            document.getElementById('price3append').innerText =price3;
+            }else if(
+                document.getElementById('greenlays1').value != '' && document.getElementById('quantity1').value !=''
+            ){
+            document.getElementById('price1').style.borderColor= 'red'
+            document.getElementById('price1').placeholder= '!!!'
+
+            }else if(
+                document.getElementById('greenlays1').value != '' && document.getElementById('price1') !==''
+                
+            ){
+            
+            document.getElementById('quantity1').style.borderColor= 'red'
+            document.getElementById('quantity1').placeholder= '!!!'
+
+            }else if(
+                document.getElementById('quantity1').value !='' && document.getElementById('price1').value !=''
+            ){
+                document.getElementById('greenlays1').style.borderColor= 'red'
+                document.getElementById('greenlays1').placeholder= '!!!'
+            }else{
+                document.getElementById('greenlays1').style.borderColor= 'red'
+                document.getElementById('greenlays1').placeholder= '!!!'
+                document.getElementById('quantity1').style.borderColor= 'red'
+                document.getElementById('quantity1').placeholder= '!!!'
+                document.getElementById('price1').style.borderColor= 'red'
+                document.getElementById('price1').placeholder= '!!!'
+                
+            }
+            
+            
+
+        }
+
+        function closeAddMoreItems(){
+            document.getElementById('addItemsDiv').style.display='none';
+        }
+
+        document.getElementById('submitMoreItems').onclick=function(){
+        }
+        
+        window.onload = function() {
+            const addItem = document.getElementById('addItem');
+            addItem.addEventListener('click', validateInputs);
+        };
+
+    </script>
+    
+</body>
+</html>
